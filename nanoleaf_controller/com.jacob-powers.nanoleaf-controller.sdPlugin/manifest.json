@@ -1,0 +1,87 @@
+{
+	"Name": "nanoleaf-controller",
+	"Version": "0.1.0.0",
+	"Author": "Jacob Powers",
+	"Actions": [
+		{
+			"Name": "Display Red",
+			"UUID": "com.jacob-powers.nanoleaf-controller.display-red",
+			"Tooltip": "Displays the red value",
+			"PropertyInspectorPath": "ui/display-red.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Display Green",
+			"UUID": "com.jacob-powers.nanoleaf-controller.display-green",
+			"Tooltip": "Displays the green value",
+			"PropertyInspectorPath": "ui/display-red.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Display Blue",
+			"UUID": "com.jacob-powers.nanoleaf-controller.display-blue",
+			"Tooltip": "Displays the blue value",
+			"PropertyInspectorPath": "ui/display-red.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Display Color",
+			"UUID": "com.jacob-powers.nanoleaf-controller.display-color",
+			"Tooltip": "Displays the color",
+			"PropertyInspectorPath": "ui/display-red.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "nanoleaf-controller",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "A simple controller for nanoleafs",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.jacob-powers.nanoleaf-controller"
+}
