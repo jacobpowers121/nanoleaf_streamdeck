@@ -1,8 +1,8 @@
 import streamDeck, { action, KeyDownEvent, SingletonAction, WillAppearEvent } from "@elgato/streamdeck";
 import {createSolidColorDataURL} from "../util/colorImage";
 
-@action({ UUID: "com.jacob-powers.nanoleaf-controller.display-color" })
-export class DisplayColor extends SingletonAction<ColorSettings> {
+@action({ UUID: "com.jacob-powers.nanoleaf-controller.display-blue" })
+export class DisplayBlue extends SingletonAction<ColorSettings> {
   override async onWillAppear(ev: WillAppearEvent<ColorSettings>): Promise<void> {
     return await this.fetchAndUpdate(ev);
   }
@@ -17,8 +17,7 @@ export class DisplayColor extends SingletonAction<ColorSettings> {
     try {
       const response = await fetch("http://localhost:8080/lights/color");
       const data = (await response.json()) as { r: number; g: number; b: number };
-      const imageDataURL = createSolidColorDataURL(data.r, data.g, data.b);
-
+      const imageDataURL = createSolidColorDataURL(0, 0, data.b);
       await ev.action.setImage(imageDataURL);
     } catch (error) {
       streamDeck.logger.error("Error fetching green value:", error);
