@@ -1,5 +1,5 @@
 import streamDeck, { action, KeyDownEvent, SingletonAction, WillAppearEvent } from "@elgato/streamdeck";
-import {createSolidColorDataURL} from "../util/colorImage";
+import {createSolidColorDataURL} from "../../util/colorImage";
 
 @action({ UUID: "com.jacob-powers.nanoleaf-controller.display-blue" })
 export class DisplayBlue extends SingletonAction<ColorSettings> {

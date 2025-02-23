@@ -4,6 +4,62 @@
 	"Author": "Jacob Powers",
 	"Actions": [
 		{
+			"Name": "Set Red Dial",
+			"UUID": "com.jacob-powers.nanoleaf-controller.set-red-dial",
+			"Tooltip": "Sets the red value",
+			"PropertyInspectorPath": "ui/display-red.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Set Green Dial",
+			"UUID": "com.jacob-powers.nanoleaf-controller.set-green-dial",
+			"Tooltip": "Sets the green value",
+			"PropertyInspectorPath": "ui/display-red.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Set Blue Dial",
+			"UUID": "com.jacob-powers.nanoleaf-controller.set-blue-dial",
+			"Tooltip": "Sets the blue value",
+			"PropertyInspectorPath": "ui/display-red.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "True Color Dial",
+			"UUID": "com.jacob-powers.nanoleaf-controller.true-color-dial",
+			"Tooltip": "Displays the true color",
+			"PropertyInspectorPath": "ui/display-red.html",
+			"Controllers": [
+				"Encoder"
+			],
+			"States": [
+				{
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
 			"Name": "Display Red",
 			"UUID": "com.jacob-powers.nanoleaf-controller.display-red",
 			"Tooltip": "Displays the red value",
